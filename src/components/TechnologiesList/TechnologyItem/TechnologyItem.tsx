@@ -1,9 +1,12 @@
+import { useState } from 'react';
+import { Text, View } from 'react-native';
+
 import { CheckBox } from '@/components/CheckBox';
 import { TrashButton } from '@/components/TrashButton';
 import { colors } from '@/styles/global';
-import { useState } from 'react';
-import { Text, View } from 'react-native';
+
 import { TechnologyItemComponentProps } from '../interfaces';
+
 import { technologyItemTextStyle, technologyItemViewStyle } from '../styles';
 
 export const TechnologyItem = ({

@@ -18,18 +18,7 @@ import { colors } from '@/styles/global';
 import { backgroundStyle } from './styles';
 
 export default () => {
-  const [technologies, setTechnologies] = useState<Technology[]>([
-    {
-      finished: false,
-      id: 'aaa5287d-54d4-45ca-9b52-bc72a5bd4cb6',
-      title: 'Integer urna interdum massa libero a auctor neque turpis turpis semper.',
-    },
-    {
-      finished: true,
-      id: 'aceaf305-0f65-4134-80c1-c765a7aeedce',
-      title: 'Integer urna interdum massa libero auctor neque turpis turpis semper.',
-    },
-  ]);
+  const [technologies, setTechnologies] = useState<Technology[]>([]);
   const [textInput, setTextInput] = useState('');
   const [completed, setCompleted] = useState(getCompletedTechnology(technologies));
 
