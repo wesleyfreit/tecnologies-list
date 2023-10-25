@@ -27,6 +27,8 @@ ios/.xcode.env.local
 build/
 .idea
 .gradle
+.bundle
+.vscode
 local.properties
 *.iml
 *.hprof
@@ -64,5 +66,3 @@ yarn-error.log
 
 # testing
 /coverage
-.bundle/config
-.vscode/settings.json
