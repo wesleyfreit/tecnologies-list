@@ -1,0 +1,1 @@
+export { TechnologiesStatistics } from './TechnologiesStatistics';

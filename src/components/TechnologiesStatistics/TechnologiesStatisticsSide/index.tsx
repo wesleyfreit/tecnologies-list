@@ -1,0 +1,1 @@
+export { TechnologiesStatisticsSide } from './TechnologiesStatisticsSide';

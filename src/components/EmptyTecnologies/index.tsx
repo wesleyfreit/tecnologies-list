@@ -1,0 +1,1 @@
+export { EmptyTecnologies } from './EmptyTecnologies';
