@@ -25,15 +25,17 @@ export const TechnologyItem = ({
     >
       <CheckBox tecnology={technology} handleSetCompleted={handleSetCompleted} />
 
-      <Text
-        style={{
-          ...technologyItemTextStyle,
-          textDecorationLine: technology.finished ? 'line-through' : 'none',
-        }}
-        onPress={() => handleSetCompleted(technology.id)}
-      >
-        {technology.title}
-      </Text>
+      <View style={{flex: 1}}>
+        <Text
+          style={{
+            ...technologyItemTextStyle,
+            textDecorationLine: technology.finished ? 'line-through' : 'none',
+          }}
+          onPress={() => handleSetCompleted(technology.id)}
+        >
+          {technology.title}
+        </Text>
+      </View>
 
       <TrashButton
         handleRemoveTechnology={handleRemoveTechnology}

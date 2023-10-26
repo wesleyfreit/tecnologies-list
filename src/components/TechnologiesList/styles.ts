@@ -13,7 +13,6 @@ const styles = StyleSheet.create({
   },
   technologyItemTextStyle: {
     fontSize: 16,
-    width: 270,
     padding: 0,
     margin: 0,
   },
