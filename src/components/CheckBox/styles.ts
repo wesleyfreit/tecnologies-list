@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
   },
   checkBoxTextStyle: {
-    color: 'white',
+    color: colors.gray100.color,
     fontSize: 10,
   },
 });

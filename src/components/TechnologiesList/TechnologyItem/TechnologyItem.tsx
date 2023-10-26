@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Text, View } from 'react-native';
 
 import { CheckBox } from '@/components/CheckBox';
@@ -14,8 +13,6 @@ export const TechnologyItem = ({
   handleSetCompleted,
   handleRemoveTechnology,
 }: TechnologyItemComponentProps) => {
-  const [pressed, setPressed] = useState(false);
-
   return (
     <View
       style={{
@@ -25,11 +22,12 @@ export const TechnologyItem = ({
     >
       <CheckBox tecnology={technology} handleSetCompleted={handleSetCompleted} />
 
-      <View style={{flex: 1}}>
+      <View style={{ flex: 1 }}>
         <Text
           style={{
             ...technologyItemTextStyle,
             textDecorationLine: technology.finished ? 'line-through' : 'none',
+            color: technology.finished ? colors.gray300.color : colors.gray100.color,
           }}
           onPress={() => handleSetCompleted(technology.id)}
         >
@@ -37,12 +35,7 @@ export const TechnologyItem = ({
         </Text>
       </View>
 
-      <TrashButton
-        handleRemoveTechnology={handleRemoveTechnology}
-        setPressed={setPressed}
-        technology={technology}
-        pressed={pressed}
-      />
+      <TrashButton handleRemoveTechnology={handleRemoveTechnology} technology={technology} />
     </View>
   );
 };

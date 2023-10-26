@@ -2,14 +2,11 @@ import { Trash2 } from 'lucide-react-native';
 import { TouchableOpacity } from 'react-native';
 
 import { colors } from '@/styles/global';
+import { useState } from 'react';
 import { TrashButtonComponentProps } from './interfaces';
 
-export const TrashButton = ({
-  handleRemoveTechnology,
-  setPressed,
-  technology,
-  pressed,
-}: TrashButtonComponentProps) => {
+export const TrashButton = ({ handleRemoveTechnology, technology }: TrashButtonComponentProps) => {
+  const [pressed, setPressed] = useState(false);
   return (
     <TouchableOpacity
       onPress={() => handleRemoveTechnology(technology.id)}

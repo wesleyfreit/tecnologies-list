@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.gray700.color,
     width: 300,
+    color: colors.gray100.color,
   },
 });
 
